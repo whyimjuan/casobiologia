@@ -8,10 +8,10 @@ export default defineConfig({
     chunkSizeWarningLimit: 1600,
     rollupOptions: {
       output: {
-        manualChunks: {
-          three: ['three'],
-          r3f: ['@react-three/fiber', '@react-three/drei'],
-          motion: ['gsap', 'framer-motion'],
+        // Three.js va en su propio fragmento: sólo se descarga con la escena 3D.
+        manualChunks(id) {
+          if (/node_modules\/three\//.test(id)) return 'three';
+          return undefined;
         },
       },
     },

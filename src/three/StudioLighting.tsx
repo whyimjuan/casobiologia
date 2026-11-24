@@ -33,7 +33,7 @@ export function StudioLighting({ settings }: { settings: QualitySettings }) {
       hoverTarget.position.lerp(rig.root.position, 1 - Math.exp(-12 * k));
       s.position.set(hoverTarget.position.x + 0.6, 5.5, hoverTarget.position.z + 2.6);
     }
-    s.intensity = THREE.MathUtils.damp(s.intensity, rig ? 60 : 0, 6, k);
+    s.intensity = THREE.MathUtils.damp(s.intensity, rig ? 42 : 0, 6, k);
     stageSpot.current.intensity = 70 * sceneFx.dim.value;
     key.current.intensity = 2.1 - sceneFx.dim.value * 0.9;
   });

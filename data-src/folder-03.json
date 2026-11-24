@@ -1,0 +1,183 @@
+{
+ "id": "inspeccion",
+ "index": 3,
+ "code": "AGV-014/C-03",
+ "title": "INSPECCIÓN",
+ "subtitle": "Actuaciones en puerto de destino",
+ "finish": "cuero",
+ "tone": "#142350",
+ "documents": [
+  {
+   "id": "i-001",
+   "code": "AGV-014/C-03/001",
+   "title": "Acta de inspección en puerto de destino",
+   "date": "09/04/2026",
+   "type": "Acta",
+   "status": "observado",
+   "source": {
+    "kind": "simulated",
+    "letterhead": "Servicio Ficticio de Inspección Fitosanitaria · Puerto de Valencia",
+    "pages": [
+     {
+      "heading": "Datos de la actuación",
+      "blocks": [
+       {
+        "kind": "kv",
+        "pairs": [
+         [
+          "Acta n.º",
+          "SFI-VLC-26-1187"
+         ],
+         [
+          "Fecha",
+          "09/04/2026, 11:30 h"
+         ],
+         [
+          "Contenedor",
+          "FICU 482913-7"
+         ],
+         [
+          "Precinto",
+          "MX-77120 (íntegro)"
+         ]
+        ]
+       },
+       {
+        "kind": "p",
+        "text": "Se procede a la apertura del contenedor en presencia del representante del importador y de un agente de aduanas. Se contabilizan 18 palés (frente a los 20 declarados en la lista de empaque) con un total de 360 cajas."
+       },
+       {
+        "kind": "p",
+        "text": "Las cajas próximas a la puerta presentan manchas de humedad y olor a fermentación. En las zonas central y frontal el material presenta aspecto turgente y coloración normal."
+       }
+      ]
+     },
+     {
+      "heading": "Muestreo y medidas",
+      "blocks": [
+       {
+        "kind": "p",
+        "text": "Se toman 12 muestras de 10 hijuelos cada una (M-01 a M-12), que se precintan y remiten al laboratorio con cadena de custodia."
+       },
+       {
+        "kind": "p",
+        "text": "Se ordena la retención cautelar de la partida hasta la recepción de resultados."
+       },
+       {
+        "kind": "sign",
+        "text": "Inspector actuante (firma simulada)"
+       },
+       {
+        "kind": "sign",
+        "text": "Representante del importador (firma simulada)"
+       }
+      ]
+     }
+    ]
+   },
+   "metadata": {
+    "Origen": "Aportado por la parte demandada",
+    "Huella SHA-256": "e1a7…6b52 (simulada)"
+   },
+   "observations": [
+    {
+     "author": "Ponente",
+     "date": "18/06/2026",
+     "text": "Discrepancia en el número de palés (18 frente a 20). Pedir aclaración a ambas partes."
+    },
+    {
+     "author": "Parte demandante",
+     "date": "21/06/2026",
+     "text": "Sostiene que dos palés se consolidaron en origen y que la lista de empaque no se actualizó."
+    }
+   ]
+  },
+  {
+   "id": "i-002",
+   "code": "AGV-014/C-03/002",
+   "title": "Fotografías de la inspección",
+   "date": "09/04/2026",
+   "type": "Reportaje fotográfico",
+   "status": "en-revision",
+   "source": {
+    "kind": "image",
+    "urls": [
+     "case/docs/inspeccion-contenedor-1.svg",
+     "case/docs/inspeccion-contenedor-2.svg"
+    ]
+   },
+   "metadata": {
+    "Origen": "Anexo al acta SFI-VLC-26-1187",
+    "Autor": "Inspector actuante",
+    "Láminas": "2"
+   },
+   "observations": [
+    {
+     "author": "Secretaría",
+     "date": "10/06/2026",
+     "text": "Faltan los metadatos EXIF originales; se aportan reproducciones ilustrativas."
+    }
+   ]
+  },
+  {
+   "id": "i-003",
+   "code": "AGV-014/C-03/003",
+   "title": "Certificado fitosanitario de exportación",
+   "date": "11/03/2026",
+   "type": "Certificado oficial",
+   "status": "revisado",
+   "source": {
+    "kind": "simulated",
+    "letterhead": "Autoridad Ficticia de Sanidad Agroalimentaria",
+    "pages": [
+     {
+      "blocks": [
+       {
+        "kind": "kv",
+        "pairs": [
+         [
+          "Certificado",
+          "CFE-26-MX-004512"
+         ],
+         [
+          "Exportador",
+          "Exportadora Ficticia del Altiplano, S.A. de C.V."
+         ],
+         [
+          "Destino",
+          "España"
+         ],
+         [
+          "Producto",
+          "Hijuelos de Agave tequilana"
+         ]
+        ]
+       },
+       {
+        "kind": "p",
+        "text": "Se certifica que las plantas descritas han sido inspeccionadas conforme a los procedimientos oficiales y se consideran libres de las plagas cuarentenarias especificadas por la parte contratante importadora."
+       },
+       {
+        "kind": "p",
+        "text": "Tratamiento: inmersión en solución fungicida e insecticida autorizada, 10/03/2026."
+       },
+       {
+        "kind": "stamp",
+        "text": "Sello oficial (simulado)"
+       },
+       {
+        "kind": "sign",
+        "text": "Inspector oficial (firma simulada)"
+       }
+      ]
+     }
+    ]
+   },
+   "metadata": {
+    "Origen": "Aportado por la parte demandante",
+    "Huella SHA-256": "4f3b…a0c9 (simulada)"
+   },
+   "observations": []
+  }
+ ]
+}

@@ -33,13 +33,14 @@ function slerpTween(target: THREE.Quaternion, to: THREE.Quaternion, vars: gsap.T
 const vec = (v: THREE.Vector3) => ({ x: v.x, y: v.y, z: v.z });
 
 export interface SequenceContext {
-  aspect: number;
+  width: number;
+  height: number;
   docs: DocRig[];
 }
 
 export function createOpenTimeline(rig: FolderRig, ctx: SequenceContext) {
   const home = rig.home.position;
-  const finalCam = stageCameraPose(ctx.aspect, ctx.docs.length);
+  const finalCam = stageCameraPose(ctx.width, ctx.height, ctx.docs.length);
   const tl = gsap.timeline({ defaults: { ease: 'power2.inOut' } });
 
   // Estado de partida limpio (por si una secuencia anterior se interrumpió)
@@ -82,7 +83,7 @@ export function createOpenTimeline(rig: FolderRig, ctx: SequenceContext) {
 
 export function createCloseTimeline(rig: FolderRig, ctx: SequenceContext) {
   const home = rig.home.position;
-  const cam = collectionCameraPose(ctx.aspect);
+  const cam = collectionCameraPose(ctx.width, ctx.height);
   const tl = gsap.timeline({ defaults: { ease: 'power2.inOut' } });
 
   // 1 · los documentos vuelven al fondo del bolsillo
@@ -109,14 +110,14 @@ export function createCloseTimeline(rig: FolderRig, ctx: SequenceContext) {
 }
 
 /** Coloca una carpeta directamente en su estado abierto (cambio de tamaño de ventana, recarga). */
-export function snapCameraToStage(aspect: number, docCount: number) {
-  const p = stageCameraPose(aspect, docCount);
+export function snapCameraToStage(w: number, h: number, docCount: number) {
+  const p = stageCameraPose(w, h, docCount);
   cameraRig.position.copy(p.position);
   cameraRig.target.copy(p.target);
 }
 
-export function snapCameraToCollection(aspect: number) {
-  const p = collectionCameraPose(aspect);
+export function snapCameraToCollection(w: number, h: number) {
+  const p = collectionCameraPose(w, h);
   cameraRig.position.copy(p.position);
   cameraRig.target.copy(p.target);
 }

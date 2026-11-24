@@ -12,7 +12,7 @@ export function bodyMaterial(tone: string, finish: FolderFinish, texSize: number
     map: toneVariation(256),
     roughnessMap: grain,
     bumpMap: grain,
-    bumpScale: finish === 'cuero' ? 0.55 : 0.35,
+    bumpScale: finish === 'cuero' ? 0.55 : 0.16,
     roughness: finish === 'cuero' ? 0.62 : 0.86,
     metalness: 0,
     sheen: finish === 'cuero' ? 0.35 : 0.1,

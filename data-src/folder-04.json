@@ -1,0 +1,154 @@
+{
+ "id": "vegetal",
+ "index": 4,
+ "code": "AGV-014/C-04",
+ "title": "MATERIAL VEGETAL",
+ "subtitle": "Muestras, fichas y cadena de custodia",
+ "finish": "carton",
+ "tone": "#2b3652",
+ "documents": [
+  {
+   "id": "v-001",
+   "code": "AGV-014/C-04/001",
+   "title": "Ficha técnica del material vegetal",
+   "date": "01/03/2026",
+   "type": "Ficha técnica",
+   "status": "revisado",
+   "source": {
+    "kind": "simulated",
+    "letterhead": "Exportadora Ficticia del Altiplano, S.A. de C.V.",
+    "pages": [
+     {
+      "heading": "Características del lote",
+      "blocks": [
+       {
+        "kind": "kv",
+        "pairs": [
+         [
+          "Especie",
+          "Agave tequilana Weber"
+         ],
+         [
+          "Variedad",
+          "Azul"
+         ],
+         [
+          "Edad",
+          "12–18 meses"
+         ],
+         [
+          "Calibre",
+          "30–45 cm"
+         ]
+        ]
+       },
+       {
+        "kind": "p",
+        "text": "Hijuelos extraídos de plantación madre certificada, con raíz recortada y secado en sombra durante 7 días previos al embalaje."
+       },
+       {
+        "kind": "p",
+        "text": "Condiciones recomendadas de transporte: 12–18 °C, humedad relativa inferior a 75 %, ventilación continua. Tolerancia a temperaturas superiores a 25 °C: 6 horas como máximo."
+       }
+      ]
+     }
+    ]
+   },
+   "metadata": {
+    "Origen": "Aportado por la parte demandante",
+    "Huella SHA-256": "b8c2…7731 (simulada)"
+   },
+   "observations": [
+    {
+     "author": "Ponente",
+     "date": "19/06/2026",
+     "text": "La tolerancia máxima declarada (6 h a >25 °C) es inferior al corte registrado (9 h 40 min)."
+    }
+   ]
+  },
+  {
+   "id": "v-002",
+   "code": "AGV-014/C-04/002",
+   "title": "Registro fotográfico de muestras",
+   "date": "15/04/2026",
+   "type": "Lámina fotográfica",
+   "status": "en-revision",
+   "source": {
+    "kind": "image",
+    "urls": [
+     "case/docs/muestras-material-vegetal.svg"
+    ]
+   },
+   "metadata": {
+    "Origen": "Laboratorio Ficticio de Sanidad Vegetal",
+    "Muestras": "M-05 a M-08"
+   },
+   "observations": []
+  },
+  {
+   "id": "v-003",
+   "code": "AGV-014/C-04/003",
+   "title": "Cadena de custodia de muestras",
+   "date": "09/04/2026",
+   "type": "Registro de custodia",
+   "status": "revisado",
+   "source": {
+    "kind": "simulated",
+    "letterhead": "Tribunal arbitral simulado · Secretaría",
+    "pages": [
+     {
+      "heading": "Trazabilidad de las muestras",
+      "blocks": [
+       {
+        "kind": "table",
+        "rows": [
+         [
+          "Muestra",
+          "Precinto",
+          "Entrega",
+          "Recepción",
+          "Estado"
+         ],
+         [
+          "M-01 a M-04",
+          "PR-5501/04",
+          "09/04 13:10",
+          "10/04 09:05",
+          "Íntegro"
+         ],
+         [
+          "M-05 a M-08",
+          "PR-5505/08",
+          "09/04 13:10",
+          "10/04 09:05",
+          "Íntegro"
+         ],
+         [
+          "M-09 a M-12",
+          "PR-5509/12",
+          "09/04 13:10",
+          "10/04 09:05",
+          "Íntegro"
+         ]
+        ]
+       },
+       {
+        "kind": "p",
+        "text": "Transporte de muestras en nevera portátil a 10 ± 2 °C. Sin incidencias."
+       },
+       {
+        "kind": "sign",
+        "text": "Responsable de custodia (firma simulada)"
+       }
+      ]
+     }
+    ]
+   },
+   "metadata": {
+    "Origen": "Laboratorio",
+    "Huella SHA-256": "19dd…e2f0 (simulada)"
+   },
+   "observations": []
+  }
+ ]
+}

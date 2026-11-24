@@ -113,8 +113,8 @@ export function cardboardFiber(size = 512) {
   const key = `card-${size}`;
   if (cache.has(key)) return cache.get(key)!;
   const [c, ctx] = canvasOf(size, size);
-  const base = fbm(size, 8, 4, 3);
-  writeGray(ctx, size, base, 0.45, 0.75);
+  const base = fbm(size, 16, 3, 3);
+  writeGray(ctx, size, base, 0.52, 0.7);
   const r = rng(11);
   ctx.globalAlpha = 0.07;
   for (let i = 0; i < size * 3; i++) {
@@ -165,7 +165,7 @@ export function tableSurface(size = 1024) {
     }
   }
   ctx.putImageData(img, 0, 0);
-  const tex = toTexture(c, { srgb: true, repeat: 3, anisotropy: 8 });
+  const tex = toTexture(c, { srgb: true, repeat: 6, anisotropy: 8 });
   cache.set(key, tex);
   return tex;
 }

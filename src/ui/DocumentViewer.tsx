@@ -53,6 +53,15 @@ export function DocumentViewer({ caseFile }: { caseFile: CaseFile }) {
   const [drawer, setDrawer] = useState(false);
   const [pdfPages, setPdfPages] = useState<number | null>(null);
   const scroller = useRef<HTMLDivElement>(null);
+  /** Mientras el lector no cambie el zoom, la página se reencuadra al conocer su proporción real. */
+  const userZoomed = useRef(false);
+  const onAspect = useCallback(
+    (a: number) => {
+      setAspect(a);
+      if (!userZoomed.current) setZoom(fitZoomFor(window.innerWidth, window.innerHeight, a, 'page'));
+    },
+    [],
+  );
   const anchor = useRef<{ x: number; y: number; px: number; py: number; ratio: number } | null>(null);
 
   const src = doc.source;
@@ -66,6 +75,7 @@ export function DocumentViewer({ caseFile }: { caseFile: CaseFile }) {
 
   /** Cambia el zoom manteniendo fijo el punto (x, y) del área de lectura. */
   const zoomTo = useCallback((next: number, x?: number, y?: number) => {
+    userZoomed.current = true;
     setZoom((z) => {
       const nz = clampZoom(next);
       const el = scroller.current;
@@ -219,9 +229,9 @@ export function DocumentViewer({ caseFile }: { caseFile: CaseFile }) {
                 {src.kind === 'simulated' && (
                   <SimulatedPageView doc={doc} letterhead={src.letterhead} page={src.pages[page]} index={page} total={total} />
                 )}
-                {src.kind === 'pdf' && <PdfPageView url={resolveAsset(src.url)} page={page} zoom={zoom} onAspect={setAspect} />}
-                {src.kind === 'image' && <ImagePageView url={pageUrl} alt={`${doc.title}, imagen ${page + 1}`} onAspect={setAspect} />}
-                <Watermark />
+                {src.kind === 'pdf' && <PdfPageView url={resolveAsset(src.url)} page={page} zoom={zoom} onAspect={onAspect} />}
+                {src.kind === 'image' && <ImagePageView url={pageUrl} alt={`${doc.title}, imagen ${page + 1}`} onAspect={onAspect} />}
+                <Watermark diagonal={src.kind === 'simulated'} />
               </motion.div>
             </motion.div>
           </AnimatePresence>

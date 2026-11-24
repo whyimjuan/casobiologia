@@ -1,7 +1,7 @@
 import { useRef, useState } from 'react';
 import * as THREE from 'three';
 import { Canvas } from '@react-three/fiber';
-import { AdaptiveDpr, PerformanceMonitor, SoftShadows } from '@react-three/drei';
+import { PerformanceMonitor, SoftShadows } from '@react-three/drei';
 import type { CaseFile } from '../data/types';
 import { QUALITY_SETTINGS } from '../lib/deviceProfile';
 import { useCaseStore } from '../state/caseStore';
@@ -34,7 +34,7 @@ export function Experience3D({ caseFile, quality }: { caseFile: CaseFile; qualit
       }}
     >
       <color attach="background" args={['#06080d']} />
-      <fog attach="fog" args={['#06080d', 16, 34]} />
+      <fog attach="fog" args={['#06080d', 24, 58]} />
       {settings.softShadows && <SoftShadows size={18} samples={10} focus={0.6} />}
       <PerformanceMonitor
         bounds={() => [40, 60]}
@@ -42,7 +42,6 @@ export function Experience3D({ caseFile, quality }: { caseFile: CaseFile; qualit
         onIncline={() => setDpr((d) => Math.min(settings.dpr[1], d + 0.25))}
         flipflops={3}
       />
-      <AdaptiveDpr pixelated={false} />
       <StudioLighting settings={settings} />
       <DeskSurface reflective={quality === 'high'} receiveShadow={settings.shadows} />
       <FolderCollection3D caseFile={caseFile} settings={settings} />

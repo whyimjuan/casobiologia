@@ -17,7 +17,7 @@ export function DeskSurface({ reflective, receiveShadow }: { reflective: boolean
 
   return (
     <mesh rotation={[-Math.PI / 2, 0, 0]} receiveShadow={receiveShadow}>
-      <planeGeometry args={[44, 44]} />
+      <planeGeometry args={[90, 90]} />
       {reflective ? (
         <MeshReflectorMaterial
           map={map}

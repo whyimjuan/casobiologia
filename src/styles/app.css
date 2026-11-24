@@ -141,7 +141,7 @@ button:focus-visible, select:focus-visible { outline: 2px solid var(--gold); out
 .folder-tab:disabled:not(.is-active) { opacity: 0.45; }
 .folder-tab.is-active { border-color: var(--gold); background: rgba(200, 162, 74, 0.12); }
 .folder-tab-num { font: 500 15px var(--serif); color: var(--gold); }
-.folder-tab-title { font: 500 10.5px var(--sans); letter-spacing: 0.08em; color: var(--muted); max-width: 130px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.folder-tab-title { font: 500 10.5px var(--sans); letter-spacing: 0.08em; color: var(--muted); max-width: 92px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .folder-tab.is-active .folder-tab-title { color: var(--text); }
 
 /* ── Panel lateral (carpeta abierta) ───────────────────────────────── */
@@ -294,7 +294,7 @@ button:focus-visible, select:focus-visible { outline: 2px solid var(--gold); out
   border-bottom: 2px solid var(--gold); transform-origin: top; transition: transform 0.8s var(--ease);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.35);
 }
-.sf-flap.is-open { transform: rotateX(165deg); }
+.sf-flap.is-open { transform: rotateX(180deg); z-index: 0; box-shadow: none; }
 .sf-label {
   position: absolute; left: 12%; right: 12%; top: 48%; z-index: 5; display: grid; gap: 4px; padding: 10px; text-align: left;
   background: var(--paper); color: var(--ink); outline: 2px solid var(--gold); outline-offset: 2px;
@@ -302,9 +302,11 @@ button:focus-visible, select:focus-visible { outline: 2px solid var(--gold); out
 .sf-num { font: 500 26px/1 var(--serif); color: #a8862f; }
 .sf-title { font: 600 11px var(--sans); letter-spacing: 0.08em; }
 .sf-code { font: 400 9.5px var(--mono); color: #4a5368; }
-.simple-open { perspective: 1400px; }
-.simple-folder.is-large { width: min(420px, 80vw); transform: none; cursor: default; margin-top: 160px; }
-.sf-docs { position: absolute; left: 5%; right: 5%; bottom: 40%; z-index: 1; display: flex; flex-direction: column-reverse; }
+.simple-open { perspective: 1400px; padding-top: 250px; }
+.simple-folder.is-large { width: min(340px, 72vw); transform: none; cursor: default; }
+.simple-folder.is-large .sf-label { top: 56%; }
+/* Las hojas asoman por encima del borde superior del cuerpo de la carpeta */
+.sf-docs { position: absolute; left: 4%; right: 4%; bottom: calc(100% - 46px); z-index: 1; display: flex; flex-direction: column; }
 .sf-doc {
   display: grid; gap: 2px; text-align: left; padding: 10px 14px 26px; margin-top: -18px; cursor: pointer;
   background: var(--paper); color: var(--ink); border: 0; border-left: 6px solid var(--status); box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.25);

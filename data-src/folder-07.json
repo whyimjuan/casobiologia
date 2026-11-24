@@ -1,0 +1,163 @@
+{
+ "id": "testimonios",
+ "index": 7,
+ "code": "AGV-014/C-07",
+ "title": "TESTIMONIOS",
+ "subtitle": "Declaraciones testificales",
+ "finish": "carton",
+ "tone": "#28344c",
+ "documents": [
+  {
+   "id": "w-001",
+   "code": "AGV-014/C-07/001",
+   "title": "Declaración del inspector actuante",
+   "date": "30/05/2026",
+   "type": "Declaración testifical",
+   "status": "revisado",
+   "source": {
+    "kind": "simulated",
+    "letterhead": "Tribunal arbitral simulado · Secretaría",
+    "pages": [
+     {
+      "heading": "Declaración",
+      "blocks": [
+       {
+        "kind": "kv",
+        "pairs": [
+         [
+          "Testigo",
+          "Inspector del servicio de inspección"
+         ],
+         [
+          "Modalidad",
+          "Videoconferencia"
+         ],
+         [
+          "Propuesto por",
+          "Parte demandada"
+         ]
+        ]
+       },
+       {
+        "kind": "p",
+        "text": "Preguntado por el estado de la mercancía, manifiesta que el deterioro se concentraba en las cajas próximas a la puerta y que en el resto del contenedor el material «tenía buen aspecto»."
+       },
+       {
+        "kind": "p",
+        "text": "Preguntado por la retención, explica que la normativa no permite la liberación parcial de una partida cuando se detecta una plaga cuarentenaria en cualquier muestra."
+       }
+      ]
+     }
+    ]
+   },
+   "metadata": {
+    "Origen": "Grabación de la audiencia",
+    "Duración": "37 min",
+    "Huella SHA-256": "d4c3…71a2 (simulada)"
+   },
+   "observations": []
+  },
+  {
+   "id": "w-002",
+   "code": "AGV-014/C-07/002",
+   "title": "Declaración del jefe de logística",
+   "date": "30/05/2026",
+   "type": "Declaración testifical",
+   "status": "observado",
+   "source": {
+    "kind": "simulated",
+    "letterhead": "Tribunal arbitral simulado · Secretaría",
+    "pages": [
+     {
+      "heading": "Declaración",
+      "blocks": [
+       {
+        "kind": "kv",
+        "pairs": [
+         [
+          "Testigo",
+          "Jefe de logística del exportador"
+         ],
+         [
+          "Modalidad",
+          "Presencial"
+         ],
+         [
+          "Propuesto por",
+          "Parte demandante"
+         ]
+        ]
+       },
+       {
+        "kind": "p",
+        "text": "Afirma que la carga se realizó en 20 palés y que dos de ellos se consolidaron en el almacén de la terminal por indicación del transportista, sin que se emitiera documento al respecto."
+       },
+       {
+        "kind": "p",
+        "text": "Reconoce que no se comprobó el estado del registrador de temperatura tras el transbordo."
+       }
+      ]
+     }
+    ]
+   },
+   "metadata": {
+    "Origen": "Grabación de la audiencia",
+    "Duración": "29 min",
+    "Huella SHA-256": "6e05…c9b8 (simulada)"
+   },
+   "observations": [
+    {
+     "author": "Ponente",
+     "date": "27/06/2026",
+     "text": "Declaración no corroborada documentalmente sobre la consolidación de palés."
+    }
+   ]
+  },
+  {
+   "id": "w-003",
+   "code": "AGV-014/C-07/003",
+   "title": "Declaración del ingeniero agrónomo",
+   "date": "31/05/2026",
+   "type": "Declaración pericial",
+   "status": "en-revision",
+   "source": {
+    "kind": "simulated",
+    "letterhead": "Tribunal arbitral simulado · Secretaría",
+    "pages": [
+     {
+      "heading": "Declaración",
+      "blocks": [
+       {
+        "kind": "kv",
+        "pairs": [
+         [
+          "Testigo-perito",
+          "Ingeniero agrónomo consultor"
+         ],
+         [
+          "Propuesto por",
+          "Parte demandante"
+         ]
+        ]
+       },
+       {
+        "kind": "p",
+        "text": "Ratifica su contrainforme. Sostiene que la pudrición, y no la plaga, fue la causa principal del deterioro, y que la exposición a 28 °C durante casi diez horas supera la tolerancia del material."
+       },
+       {
+        "kind": "p",
+        "text": "A preguntas del tribunal, admite que la presencia de larvas, aun en baja proporción, impide la importación conforme a la normativa del país de destino."
+       }
+      ]
+     }
+    ]
+   },
+   "metadata": {
+    "Origen": "Grabación de la audiencia",
+    "Duración": "52 min",
+    "Huella SHA-256": "0aa9…f7e1 (simulada)"
+   },
+   "observations": []
+  }
+ ]
+}

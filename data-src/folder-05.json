@@ -1,0 +1,215 @@
+{
+ "id": "comunicaciones",
+ "index": 5,
+ "code": "AGV-014/C-05",
+ "title": "COMUNICACIONES",
+ "subtitle": "Correspondencia entre las partes",
+ "finish": "cuero",
+ "tone": "#101b38",
+ "documents": [
+  {
+   "id": "m-001",
+   "code": "AGV-014/C-05/001",
+   "title": "Correo: notificación de rechazo",
+   "date": "10/04/2026",
+   "type": "Correo electrónico",
+   "status": "revisado",
+   "source": {
+    "kind": "simulated",
+    "letterhead": "Distribuidora Ficticia Mar del Norte, S.L.",
+    "pages": [
+     {
+      "blocks": [
+       {
+        "kind": "kv",
+        "pairs": [
+         [
+          "De",
+          "compras@marnorte.example"
+         ],
+         [
+          "Para",
+          "export@altiplano.example"
+         ],
+         [
+          "Fecha",
+          "10/04/2026 17:42"
+         ],
+         [
+          "Asunto",
+          "Rechazo partida FICU 482913-7"
+         ]
+        ]
+       },
+       {
+        "kind": "p",
+        "text": "Les informamos de que la partida ha sido retenida por la autoridad fitosanitaria tras detectarse material en mal estado. Rechazamos la mercancía en su totalidad y quedamos a la espera de sus instrucciones. Suspendemos el pago del saldo pendiente."
+       },
+       {
+        "kind": "p",
+        "text": "Atentamente, Departamento de Compras."
+       }
+      ]
+     }
+    ]
+   },
+   "metadata": {
+    "Origen": "Aportado por ambas partes",
+    "Cabeceras": "Verificadas",
+    "Huella SHA-256": "61aa…3c88 (simulada)"
+   },
+   "observations": [
+    {
+     "author": "Ponente",
+     "date": "20/06/2026",
+     "text": "Comunicación dentro del plazo de la cláusula 7, pero sin precisar la naturaleza de la falta de conformidad."
+    }
+   ]
+  },
+  {
+   "id": "m-002",
+   "code": "AGV-014/C-05/002",
+   "title": "Correo: respuesta del exportador",
+   "date": "11/04/2026",
+   "type": "Correo electrónico",
+   "status": "revisado",
+   "source": {
+    "kind": "simulated",
+    "letterhead": "Exportadora Ficticia del Altiplano, S.A. de C.V.",
+    "pages": [
+     {
+      "blocks": [
+       {
+        "kind": "kv",
+        "pairs": [
+         [
+          "De",
+          "export@altiplano.example"
+         ],
+         [
+          "Para",
+          "compras@marnorte.example"
+         ],
+         [
+          "Fecha",
+          "11/04/2026 09:15"
+         ],
+         [
+          "Asunto",
+          "RE: Rechazo partida"
+         ]
+        ]
+       },
+       {
+        "kind": "p",
+        "text": "Lamentamos lo ocurrido. Les recordamos que el riesgo se transmitió con la carga a bordo y que la mercancía salió con certificado fitosanitario. Les rogamos que reclamen a la naviera y a la aseguradora, y que nos detallen el problema concreto que han detectado."
+       }
+      ]
+     }
+    ]
+   },
+   "metadata": {
+    "Origen": "Aportado por ambas partes",
+    "Huella SHA-256": "72ce…0b14 (simulada)"
+   },
+   "observations": []
+  },
+  {
+   "id": "m-003",
+   "code": "AGV-014/C-05/003",
+   "title": "Carta de reclamación formal",
+   "date": "28/04/2026",
+   "type": "Carta certificada",
+   "status": "observado",
+   "source": {
+    "kind": "simulated",
+    "letterhead": "Distribuidora Ficticia Mar del Norte, S.L.",
+    "pages": [
+     {
+      "heading": "Reclamación",
+      "blocks": [
+       {
+        "kind": "p",
+        "text": "Por medio de la presente, y a la vista del dictamen LFSV-2026-0417, declaramos resuelto el contrato por incumplimiento esencial, al haberse entregado material infestado por Scyphophorus acupunctatus, en contra de lo pactado."
+       },
+       {
+        "kind": "p",
+        "text": "Reclamamos la devolución del anticipo (18.360 USD), los gastos de inspección, almacenaje y destrucción (6.940 USD) y una indemnización por lucro cesante que se cuantificará en el procedimiento."
+       },
+       {
+        "kind": "sign",
+        "text": "Administradora única (firma simulada)"
+       }
+      ]
+     }
+    ]
+   },
+   "metadata": {
+    "Origen": "Aportado por la parte demandada",
+    "Envío": "Burofax con acuse",
+    "Huella SHA-256": "c0fe…5512 (simulada)"
+   },
+   "observations": [
+    {
+     "author": "Parte demandante",
+     "date": "22/06/2026",
+     "text": "Alega que la resolución es extemporánea y que el porcentaje infestado (2,5 %) no constituye incumplimiento esencial."
+    }
+   ]
+  },
+  {
+   "id": "m-004",
+   "code": "AGV-014/C-05/004",
+   "title": "Minuta de videollamada",
+   "date": "15/04/2026",
+   "type": "Minuta",
+   "status": "pendiente",
+   "source": {
+    "kind": "simulated",
+    "letterhead": "Tribunal arbitral simulado · Secretaría",
+    "pages": [
+     {
+      "blocks": [
+       {
+        "kind": "kv",
+        "pairs": [
+         [
+          "Fecha",
+          "15/04/2026"
+         ],
+         [
+          "Duración",
+          "48 min"
+         ],
+         [
+          "Asistentes",
+          "Representantes de ambas partes"
+         ]
+        ]
+       },
+       {
+        "kind": "p",
+        "text": "Se discute la posibilidad de reacondicionar las cajas en buen estado. La compradora indica que la autoridad no autoriza la liberación parcial. La vendedora propone un descuento del 20 %, que no es aceptado."
+       },
+       {
+        "kind": "p",
+        "text": "Ambas partes reconocen que no se levantó acta firmada de la reunión."
+       }
+      ]
+     }
+    ]
+   },
+   "metadata": {
+    "Origen": "Aportado por la parte demandante",
+    "Huella SHA-256": "88b1…dd02 (simulada)"
+   },
+   "observations": [
+    {
+     "author": "Secretaría",
+     "date": "21/06/2026",
+     "text": "Documento unilateral; su valor probatorio está pendiente de valoración."
+    }
+   ]
+  }
+ ]
+}

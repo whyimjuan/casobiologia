@@ -109,17 +109,18 @@ export function createReturnTimeline(doc: DocRig, siblings: DocRig[]) {
   };
 
   // 1 · el documento vuelve a la carpeta
-  tl.add(flight(doc.slot, () => worldPoseOf(doc.slot), liftedWorld, { duration: 1.0, ease: 'power3.inOut', arc: 0.5 }), 0);
+  const t0 = 0.18; // el visor 2D se desvanece antes de que la hoja empiece a moverse
+  tl.add(flight(doc.slot, () => worldPoseOf(doc.slot), liftedWorld, { duration: 1.0, ease: 'power3.inOut', arc: 0.5 }), t0);
   tl.call(() => {
     parent.attach(doc.slot);
-  }, undefined, 1.0);
-  tl.to(doc.slot.position, { y: doc.raisedY, duration: 0.6, ease: 'power2.inOut' }, 1.02);
-  tl.to(doc.slot.rotation, { z: doc.baseRotZ, duration: 0.6 }, 1.02);
+  }, undefined, t0 + 1.0);
+  tl.to(doc.slot.position, { y: doc.raisedY, duration: 0.6, ease: 'power2.inOut' }, t0 + 1.02);
+  tl.to(doc.slot.rotation, { z: doc.baseRotZ, duration: 0.6 }, t0 + 1.02);
 
   // 2 · los documentos se reorganizan en su orden
   siblings.forEach((s, i) => {
     if (s.id === doc.id) return;
-    tl.to(s.slot.position, { y: s.raisedY, duration: 0.55, ease: 'back.out(1.6)' }, 1.1 + i * 0.05);
+    tl.to(s.slot.position, { y: s.raisedY, duration: 0.55, ease: 'back.out(1.6)' }, t0 + 1.1 + i * 0.05);
   });
   return tl;
 }

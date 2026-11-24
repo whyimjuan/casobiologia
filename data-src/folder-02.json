@@ -1,0 +1,253 @@
+{
+ "id": "transporte",
+ "index": 2,
+ "code": "AGV-014/C-02",
+ "title": "DOCUMENTACIÓN DE TRANSPORTE",
+ "subtitle": "Embarque, seguro y cadena de frío",
+ "finish": "carton",
+ "tone": "#24314f",
+ "documents": [
+  {
+   "id": "t-001",
+   "code": "AGV-014/C-02/001",
+   "title": "Conocimiento de embarque NFT-MZO-26-0198",
+   "date": "14/03/2026",
+   "type": "Conocimiento de embarque",
+   "status": "revisado",
+   "source": {
+    "kind": "pdf",
+    "url": "case/docs/conocimiento-embarque.pdf"
+   },
+   "metadata": {
+    "Origen": "Aportado por la parte demandante",
+    "Emisor": "Naviera Ficticia Transpacífico",
+    "Huella SHA-256": "5d1e…90ab (simulada)"
+   },
+   "observations": [
+    {
+     "author": "Ponente",
+     "date": "12/06/2026",
+     "text": "La anotación de transbordo en Algeciras documenta un corte de suministro eléctrico de 9 h 40 min."
+    },
+    {
+     "author": "Parte demandada",
+     "date": "15/06/2026",
+     "text": "Se solicita que el transportista aclare si el corte afectó a la ventilación."
+    }
+   ]
+  },
+  {
+   "id": "t-002",
+   "code": "AGV-014/C-02/002",
+   "title": "Póliza de seguro de carga",
+   "date": "10/03/2026",
+   "type": "Póliza de seguro",
+   "status": "revisado",
+   "source": {
+    "kind": "simulated",
+    "letterhead": "Aseguradora Ficticia del Pacífico, S.A.",
+    "pages": [
+     {
+      "heading": "Condiciones particulares",
+      "blocks": [
+       {
+        "kind": "kv",
+        "pairs": [
+         [
+          "Póliza",
+          "CRG-26-55120"
+         ],
+         [
+          "Tomador",
+          "Exportadora Ficticia del Altiplano, S.A. de C.V."
+         ],
+         [
+          "Suma asegurada",
+          "67.320 USD (110 %)"
+         ],
+         [
+          "Cobertura",
+          "Todo riesgo · ICC (A)"
+         ]
+        ]
+       },
+       {
+        "kind": "p",
+        "text": "Quedan cubiertos los daños materiales a la mercancía derivados de fallo de los equipos de refrigeración del contenedor por un período continuado superior a 24 horas."
+       },
+       {
+        "kind": "p",
+        "text": "Exclusión 4.2: no se cubren los daños derivados de vicio propio o naturaleza de la mercancía, incluidas plagas o enfermedades presentes antes del embarque."
+       },
+       {
+        "kind": "sign",
+        "text": "Aseguradora · Suscripción (firma simulada)"
+       }
+      ]
+     }
+    ]
+   },
+   "metadata": {
+    "Origen": "Aportado por la parte demandante",
+    "Huella SHA-256": "aa31…2f07 (simulada)"
+   },
+   "observations": [
+    {
+     "author": "Ponente",
+     "date": "12/06/2026",
+     "text": "Atención a la exclusión 4.2 (vicio propio) y al umbral de 24 horas: el corte registrado fue de 9 h 40 min."
+    }
+   ]
+  },
+  {
+   "id": "t-003",
+   "code": "AGV-014/C-02/003",
+   "title": "Registro de temperatura del contenedor",
+   "date": "06/04/2026",
+   "type": "Registro técnico",
+   "status": "impugnado",
+   "source": {
+    "kind": "simulated",
+    "letterhead": "Naviera Ficticia Transpacífico · Equipos frigoríficos",
+    "pages": [
+     {
+      "heading": "Extracto del registrador FICU 482913-7",
+      "blocks": [
+       {
+        "kind": "table",
+        "rows": [
+         [
+          "Fecha",
+          "Hora",
+          "Suministro",
+          "Aire impulsión",
+          "Observación"
+         ],
+         [
+          "14/03",
+          "18:00",
+          "Normal",
+          "15,1 °C",
+          "Consigna +15 °C"
+         ],
+         [
+          "25/03",
+          "06:00",
+          "Normal",
+          "15,3 °C",
+          "—"
+         ],
+         [
+          "02/04",
+          "03:20",
+          "Sin energía",
+          "—",
+          "Transbordo Algeciras"
+         ],
+         [
+          "02/04",
+          "08:10",
+          "Sin energía",
+          "27,8 °C",
+          "Lectura interna"
+         ],
+         [
+          "02/04",
+          "13:00",
+          "Normal",
+          "16,9 °C",
+          "Restablecido"
+         ],
+         [
+          "06/04",
+          "09:00",
+          "Normal",
+          "15,2 °C",
+          "Llegada Valencia"
+         ]
+        ]
+       },
+       {
+        "kind": "p",
+        "text": "Duración total de la interrupción: 9 h 40 min. Temperatura máxima interna estimada: 28,4 °C."
+       },
+       {
+        "kind": "stamp",
+        "text": "Copia certificada"
+       }
+      ]
+     }
+    ]
+   },
+   "metadata": {
+    "Origen": "Requerido al transportista",
+    "Formato original": "Archivo de registrador (.csv)",
+    "Huella SHA-256": "7b90…c4d1 (simulada)"
+   },
+   "observations": [
+    {
+     "author": "Parte demandada",
+     "date": "16/06/2026",
+     "text": "Impugna la lectura de 27,8 °C por no constar calibración del sensor."
+    },
+    {
+     "author": "Secretaría",
+     "date": "20/06/2026",
+     "text": "Se ha requerido el certificado de calibración al transportista."
+    }
+   ]
+  },
+  {
+   "id": "t-004",
+   "code": "AGV-014/C-02/004",
+   "title": "Guía de transporte terrestre",
+   "date": "12/03/2026",
+   "type": "Carta de porte",
+   "status": "pendiente",
+   "source": {
+    "kind": "simulated",
+    "letterhead": "Autotransportes Ficticios de Occidente",
+    "pages": [
+     {
+      "blocks": [
+       {
+        "kind": "kv",
+        "pairs": [
+         [
+          "Guía",
+          "ATO-26-3312"
+         ],
+         [
+          "Origen",
+          "Tepatitlán, Jal."
+         ],
+         [
+          "Destino",
+          "Puerto de Manzanillo"
+         ],
+         [
+          "Unidad",
+          "Tractocamión con caja refrigerada"
+         ]
+        ]
+       },
+       {
+        "kind": "p",
+        "text": "Salida el 12/03/2026 a las 22:00 h y llegada a la terminal el 13/03/2026 a las 07:30 h. Temperatura durante el trayecto: 14–16 °C según termógrafo de la unidad."
+       },
+       {
+        "kind": "sign",
+        "text": "Operador (firma simulada)"
+       }
+      ]
+     }
+    ]
+   },
+   "metadata": {
+    "Origen": "Aportado por la parte demandante",
+    "Huella SHA-256": "0c44…19ee (simulada)"
+   },
+   "observations": []
+  }
+ ]
+}

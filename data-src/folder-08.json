@@ -1,0 +1,176 @@
+{
+ "id": "otros",
+ "index": 8,
+ "code": "AGV-014/C-08",
+ "title": "OTROS DOCUMENTOS",
+ "subtitle": "Poderes, registros e índice general",
+ "finish": "cuero",
+ "tone": "#16213f",
+ "documents": [
+  {
+   "id": "o-001",
+   "code": "AGV-014/C-08/001",
+   "title": "Poder especial de representación",
+   "date": "02/05/2026",
+   "type": "Poder notarial",
+   "status": "revisado",
+   "source": {
+    "kind": "simulated",
+    "letterhead": "Notaría Ficticia n.º 47",
+    "pages": [
+     {
+      "blocks": [
+       {
+        "kind": "p",
+        "text": "Ante mí, notario, comparece la administradora única de Distribuidora Ficticia Mar del Norte, S.L., y otorga poder especial a favor de su letrada para que la represente en el procedimiento arbitral AGV-2026-014, con facultades para transigir y desistir."
+       },
+       {
+        "kind": "stamp",
+        "text": "Copia autorizada (simulada)"
+       },
+       {
+        "kind": "sign",
+        "text": "Notario (firma simulada)"
+       }
+      ]
+     }
+    ]
+   },
+   "metadata": {
+    "Origen": "Aportado por la parte demandada",
+    "Huella SHA-256": "12ef…aa90 (simulada)"
+   },
+   "observations": []
+  },
+  {
+   "id": "o-002",
+   "code": "AGV-014/C-08/002",
+   "title": "Certificación registral de la sociedad",
+   "date": "25/04/2026",
+   "type": "Certificación registral",
+   "status": "revisado",
+   "source": {
+    "kind": "simulated",
+    "letterhead": "Registro Mercantil Ficticio",
+    "pages": [
+     {
+      "blocks": [
+       {
+        "kind": "kv",
+        "pairs": [
+         [
+          "Denominación",
+          "Exportadora Ficticia del Altiplano, S.A. de C.V."
+         ],
+         [
+          "Constitución",
+          "2011"
+         ],
+         [
+          "Objeto",
+          "Producción y exportación de material vegetal"
+         ],
+         [
+          "Administración",
+          "Consejo de administración"
+         ]
+        ]
+       },
+       {
+        "kind": "p",
+        "text": "Se certifica la vigencia de los cargos y la inexistencia de procedimientos concursales a la fecha de expedición."
+       },
+       {
+        "kind": "stamp",
+        "text": "Certificación (simulada)"
+       }
+      ]
+     }
+    ]
+   },
+   "metadata": {
+    "Origen": "Aportado por la parte demandante",
+    "Huella SHA-256": "77c1…0e3b (simulada)"
+   },
+   "observations": []
+  },
+  {
+   "id": "o-003",
+   "code": "AGV-014/C-08/003",
+   "title": "Índice general del expediente",
+   "date": "01/07/2026",
+   "type": "Índice",
+   "status": "pendiente",
+   "source": {
+    "kind": "simulated",
+    "letterhead": "Tribunal arbitral simulado · Secretaría",
+    "pages": [
+     {
+      "heading": "Índice de carpetas",
+      "blocks": [
+       {
+        "kind": "table",
+        "rows": [
+         [
+          "Carpeta",
+          "Contenido",
+          "Documentos"
+         ],
+         [
+          "C-01",
+          "Documentación comercial",
+          "4"
+         ],
+         [
+          "C-02",
+          "Documentación de transporte",
+          "4"
+         ],
+         [
+          "C-03",
+          "Inspección",
+          "3"
+         ],
+         [
+          "C-04",
+          "Material vegetal",
+          "3"
+         ],
+         [
+          "C-05",
+          "Comunicaciones",
+          "4"
+         ],
+         [
+          "C-06",
+          "Informes periciales",
+          "3"
+         ],
+         [
+          "C-07",
+          "Testimonios",
+          "3"
+         ],
+         [
+          "C-08",
+          "Otros documentos",
+          "3"
+         ]
+        ]
+       },
+       {
+        "kind": "p",
+        "text": "El presente expediente es material ficticio elaborado exclusivamente para una simulación académica. Cualquier parecido con personas, empresas o hechos reales es pura coincidencia."
+       }
+      ]
+     }
+    ]
+   },
+   "metadata": {
+    "Origen": "Secretaría del tribunal",
+    "Versión": "1.3"
+   },
+   "observations": []
+  }
+ ]
+}

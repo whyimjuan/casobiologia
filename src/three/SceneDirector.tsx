@@ -22,7 +22,7 @@ export function SceneDirector({ layer, timeScale = 1 }: { layer: React.RefObject
 
   // Encuadre inicial
   useEffect(() => {
-    snapCameraToCollection(size.width / size.height);
+    snapCameraToCollection(size.width, size.height);
     camera.position.copy(cameraRig.position);
     camera.lookAt(cameraRig.target);
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
@@ -30,7 +30,7 @@ export function SceneDirector({ layer, timeScale = 1 }: { layer: React.RefObject
   // Fases → secuencias
   useEffect(() => {
     const { activeFolderId, activeDocId, caseFile, completePhase } = useCaseStore.getState();
-    const aspect = size.width / size.height;
+    const dims = { width: size.width, height: size.height };
     const run = (make: () => gsap.core.Timeline) => {
       tl.current?.progress(1).kill();
       const t = make();
@@ -45,7 +45,7 @@ export function SceneDirector({ layer, timeScale = 1 }: { layer: React.RefObject
         const rig = folderRigs.get(activeFolderId);
         const docs = docRigsOf(activeFolderId);
         if (!rig || docs.length < expected) return false;
-        run(() => createOpenTimeline(rig, { aspect, docs }));
+        run(() => createOpenTimeline(rig, { ...dims, docs }));
         return true;
       };
       if (!start()) {
@@ -60,7 +60,7 @@ export function SceneDirector({ layer, timeScale = 1 }: { layer: React.RefObject
 
     if (phase === 'closing' && activeFolderId) {
       const rig = folderRigs.get(activeFolderId);
-      if (rig) run(() => createCloseTimeline(rig, { aspect, docs: docRigsOf(activeFolderId) }));
+      if (rig) run(() => createCloseTimeline(rig, { ...dims, docs: docRigsOf(activeFolderId) }));
     }
 
     if (phase === 'extracting' && activeDocId && activeFolderId && layer.current) {
@@ -70,14 +70,22 @@ export function SceneDirector({ layer, timeScale = 1 }: { layer: React.RefObject
         run(() =>
           createExtractTimeline(doc, docRigsOf(activeFolderId), lyr, () =>
             readingSheetPose(camera, size.width, size.height),
-          ),
+          ).call(() => {
+            // Cuando el visor ya cubre la hoja, se oculta para no dibujarla por detrás.
+            setTimeout(() => {
+              if (useCaseStore.getState().phase === 'reading') doc.slot.visible = false;
+            }, 450);
+          }),
         );
       }
     }
 
     if (phase === 'returning' && activeDocId && activeFolderId) {
       const doc = docRigs.get(activeDocId);
-      if (doc) run(() => createReturnTimeline(doc, docRigsOf(activeFolderId)));
+      if (doc) {
+        doc.slot.visible = true;
+        run(() => createReturnTimeline(doc, docRigsOf(activeFolderId)));
+      }
     }
     return undefined;
   }, [phase]); // eslint-disable-line react-hooks/exhaustive-deps
@@ -85,11 +93,10 @@ export function SceneDirector({ layer, timeScale = 1 }: { layer: React.RefObject
   // Cambio de tamaño de la ventana en estados estables: reencuadrar sin animación.
   useEffect(() => {
     const { activeFolderId, activeDocId, caseFile } = useCaseStore.getState();
-    const aspect = size.width / size.height;
-    if (phase === 'collection') snapCameraToCollection(aspect);
+    if (phase === 'collection') snapCameraToCollection(size.width, size.height);
     if ((phase === 'open' || phase === 'reading') && activeFolderId) {
       const n = caseFile?.folders.find((f) => f.id === activeFolderId)?.documents.length ?? 1;
-      snapCameraToStage(aspect, n);
+      snapCameraToStage(size.width, size.height, n);
     }
     if (phase === 'reading' && activeDocId) {
       const doc = docRigs.get(activeDocId);

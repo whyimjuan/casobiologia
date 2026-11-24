@@ -1,0 +1,151 @@
+{
+ "id": "periciales",
+ "index": 6,
+ "code": "AGV-014/C-06",
+ "title": "INFORMES PERICIALES",
+ "subtitle": "Dictámenes técnicos y contrainformes",
+ "finish": "cuero",
+ "tone": "#1f305e",
+ "documents": [
+  {
+   "id": "p-001",
+   "code": "AGV-014/C-06/001",
+   "title": "Dictamen fitopatológico LFSV-2026-0417",
+   "date": "22/04/2026",
+   "type": "Dictamen de laboratorio",
+   "status": "revisado",
+   "source": {
+    "kind": "pdf",
+    "url": "case/docs/dictamen-laboratorio.pdf"
+   },
+   "metadata": {
+    "Origen": "Laboratorio Ficticio de Sanidad Vegetal",
+    "Encargo": "Autoridad de inspección",
+    "Huella SHA-256": "3e77…9f60 (simulada)"
+   },
+   "observations": [
+    {
+     "author": "Ponente",
+     "date": "23/06/2026",
+     "text": "Pieza central. Las conclusiones admiten causas concurrentes: infestación previa y ruptura de la cadena de frío."
+    },
+    {
+     "author": "Perito de parte demandante",
+     "date": "25/06/2026",
+     "text": "Cuestiona la representatividad del muestreo (0,67 % del lote)."
+    }
+   ]
+  },
+  {
+   "id": "p-002",
+   "code": "AGV-014/C-06/002",
+   "title": "Informe pericial de daños y valoración",
+   "date": "20/05/2026",
+   "type": "Informe pericial",
+   "status": "en-revision",
+   "source": {
+    "kind": "simulated",
+    "letterhead": "Gabinete Pericial Ficticio · Valoración agrícola",
+    "pages": [
+     {
+      "heading": "Valoración",
+      "blocks": [
+       {
+        "kind": "table",
+        "rows": [
+         [
+          "Concepto",
+          "Importe"
+         ],
+         [
+          "Valor de la mercancía (CIF)",
+          "61.200 USD"
+         ],
+         [
+          "Inspección y análisis",
+          "2.150 USD"
+         ],
+         [
+          "Almacenaje en frío (21 días)",
+          "3.020 USD"
+         ],
+         [
+          "Destrucción controlada",
+          "1.770 USD"
+         ],
+         [
+          "Total daño emergente",
+          "68.140 USD"
+         ]
+        ]
+       },
+       {
+        "kind": "p",
+        "text": "El lucro cesante se estima en 22.400 USD, a partir del margen medio de reventa a viveros en la campaña 2026."
+       }
+      ]
+     },
+     {
+      "heading": "Conclusión",
+      "blocks": [
+       {
+        "kind": "p",
+        "text": "De mantenerse la hipótesis de incumplimiento esencial, el perjuicio total asciende a 90.540 USD. Si se atribuye el daño a la ruptura de la cadena de frío, el riesgo recaería en la compradora y la cobertura correspondería, en su caso, a la aseguradora."
+       },
+       {
+        "kind": "sign",
+        "text": "Perito valorador (firma simulada)"
+       }
+      ]
+     }
+    ]
+   },
+   "metadata": {
+    "Origen": "Aportado por la parte demandada",
+    "Huella SHA-256": "a9d0…4417 (simulada)"
+   },
+   "observations": []
+  },
+  {
+   "id": "p-003",
+   "code": "AGV-014/C-06/003",
+   "title": "Contrainforme técnico",
+   "date": "05/06/2026",
+   "type": "Contrainforme",
+   "status": "pendiente",
+   "source": {
+    "kind": "simulated",
+    "letterhead": "Consultoría Agronómica Ficticia del Bajío",
+    "pages": [
+     {
+      "blocks": [
+       {
+        "kind": "p",
+        "text": "El ciclo biológico de Scyphophorus acupunctatus hace improbable que larvas de tercer estadio se desarrollen en 24 días de tránsito si el huevo se depositó tras el tratamiento de 10/03/2026. Sin embargo, no puede descartarse una infestación residual no detectada en origen."
+       },
+       {
+        "kind": "p",
+        "text": "La pudrición blanda generalizada en la zona de puerta es consistente con el episodio térmico documentado y explica la mayor parte del deterioro observado."
+       },
+       {
+        "kind": "sign",
+        "text": "Ingeniero agrónomo consultor (firma simulada)"
+       }
+      ]
+     }
+    ]
+   },
+   "metadata": {
+    "Origen": "Aportado por la parte demandante",
+    "Huella SHA-256": "f212…b0d3 (simulada)"
+   },
+   "observations": [
+    {
+     "author": "Ponente",
+     "date": "26/06/2026",
+     "text": "Admite la posible infestación residual: valorar en relación con la garantía de la cláusula primera."
+    }
+   ]
+  }
+ ]
+}

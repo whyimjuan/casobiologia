@@ -124,7 +124,7 @@ export function PhysicalFolder3D({
 
     // Atenuación del resto del conjunto cuando una carpeta pasa a primer plano
     const dim = active ? 0 : sceneFx.dim.value;
-    const f = 1 - dim * 0.62;
+    const f = 1 - dim * 0.74;
     mats.body.color.copy(base.body).multiplyScalar(f);
     mats.edge.color.copy(base.edge).multiplyScalar(f);
     mats.gold.color.copy(base.gold).multiplyScalar(f);
