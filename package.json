@@ -1,0 +1,35 @@
+{
+  "name": "agave-case-system",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "generate:samples": "node scripts/generate-sample-pdfs.mjs"
+  },
+  "dependencies": {
+    "@fontsource/eb-garamond": "5.1.0",
+    "@fontsource/ibm-plex-mono": "5.1.0",
+    "@fontsource/ibm-plex-sans": "5.1.0",
+    "@react-three/drei": "9.117.3",
+    "@react-three/fiber": "8.17.10",
+    "framer-motion": "11.11.17",
+    "gsap": "3.12.5",
+    "pdfjs-dist": "4.8.69",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "three": "0.170.0",
+    "zustand": "5.0.1"
+  },
+  "devDependencies": {
+    "@types/react": "18.3.12",
+    "@types/react-dom": "18.3.1",
+    "@types/three": "0.170.0",
+    "@vitejs/plugin-react": "4.3.4",
+    "pdf-lib": "1.17.1",
+    "typescript": "5.6.3",
+    "vite": "6.0.3"
+  }
+}

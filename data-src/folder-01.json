@@ -1,0 +1,131 @@
+{
+  "id": "comercial",
+  "index": 1,
+  "code": "AGV-014/C-01",
+  "title": "DOCUMENTACIÓN COMERCIAL",
+  "subtitle": "Contrato, facturación y órdenes de la operación",
+  "finish": "cuero",
+  "tone": "#1b2a4e",
+  "documents": [
+    {
+      "id": "c01-contrato",
+      "code": "AGV-014/C-01/001",
+      "title": "Contrato de compraventa internacional",
+      "date": "12/02/2026",
+      "type": "Contrato",
+      "status": "revisado",
+      "source": {
+        "kind": "simulated",
+        "letterhead": "Exportadora Ficticia del Altiplano, S.A. de C.V.",
+        "pages": [
+          {
+            "heading": "Partes y objeto",
+            "blocks": [
+              { "kind": "p", "text": "En la ciudad de Guadalajara, a doce de febrero de dos mil veintiséis, comparecen, por una parte, EXPORTADORA FICTICIA DEL ALTIPLANO, S.A. de C.V. (en adelante, «la Vendedora»), y por otra, DISTRIBUIDORA FICTICIA MAR DEL NORTE, S.L. (en adelante, «la Compradora»), quienes se reconocen capacidad suficiente para obligarse en los términos del presente contrato." },
+              { "kind": "h", "text": "Cláusula primera · Objeto" },
+              { "kind": "p", "text": "La Vendedora se obliga a entregar 18.000 hijuelos de agave (Agave tequilana, variedad azul) de entre 30 y 45 cm, libres de plagas cuarentenarias y acompañados de certificado fitosanitario oficial, y la Compradora a pagar el precio pactado en la cláusula tercera." },
+              { "kind": "h", "text": "Cláusula segunda · Entrega" },
+              { "kind": "p", "text": "La entrega se realizará en condiciones CIF puerto de Valencia (Incoterms® 2020). El riesgo se transmite a la Compradora una vez la mercancía haya sido cargada a bordo en el puerto de Manzanillo. La Vendedora garantiza un embalaje ventilado y una temperatura de transporte entre 12 °C y 18 °C." },
+              { "kind": "kv", "pairs": [["Cantidad", "18.000 unidades"], ["Incoterm", "CIF Valencia"], ["Embarque", "Marzo de 2026"], ["Temperatura", "12–18 °C"]] }
+            ]
+          },
+          {
+            "heading": "Precio, inspección y controversias",
+            "blocks": [
+              { "kind": "h", "text": "Cláusula tercera · Precio" },
+              { "kind": "p", "text": "El precio total asciende a 61.200,00 USD (3,40 USD por unidad), pagadero el 30 % por adelantado y el 70 % restante contra presentación de los documentos de embarque mediante carta de crédito irrevocable." },
+              { "kind": "h", "text": "Cláusula séptima · Inspección a la llegada" },
+              { "kind": "p", "text": "La Compradora deberá inspeccionar la mercancía en un plazo máximo de cinco días hábiles desde su despacho aduanero y notificar por escrito cualquier falta de conformidad, con indicación precisa de su naturaleza. Transcurrido dicho plazo se entenderá aceptada." },
+              { "kind": "h", "text": "Cláusula decimosegunda · Resolución de controversias" },
+              { "kind": "p", "text": "Toda controversia derivada del presente contrato se resolverá definitivamente mediante arbitraje de derecho, con sede en Madrid, por un tribunal de tres árbitros. Se aplicará la Convención de las Naciones Unidas sobre los Contratos de Compraventa Internacional de Mercaderías." },
+              { "kind": "sign", "text": "Por la Vendedora · Dir. General (firma simulada)" },
+              { "kind": "sign", "text": "Por la Compradora · Administradora única (firma simulada)" }
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "Origen": "Aportado por la parte demandante",
+        "Custodia": "Secretaría del tribunal · Anexo D-1",
+        "Huella SHA-256": "9f2c…a41e (simulada)",
+        "Idioma": "Español"
+      },
+      "observations": [
+        { "author": "Secretaría", "date": "03/06/2026", "text": "Documento íntegro. Coincide con la copia aportada por la parte demandada." },
+        { "author": "Ponente", "date": "10/06/2026", "text": "Relevante la cláusula séptima: el plazo de notificación de la falta de conformidad es central en la controversia." }
+      ]
+    },
+    {
+      "id": "c01-factura",
+      "code": "AGV-014/C-01/002",
+      "title": "Factura comercial FX-2026-0311",
+      "date": "08/03/2026",
+      "type": "Factura",
+      "status": "revisado",
+      "source": {
+        "kind": "simulated",
+        "letterhead": "Exportadora Ficticia del Altiplano, S.A. de C.V.",
+        "pages": [
+          {
+            "blocks": [
+              { "kind": "kv", "pairs": [["Factura n.º", "FX-2026-0311"], ["Fecha", "08/03/2026"], ["Cliente", "Distribuidora Ficticia Mar del Norte, S.L."], ["Condiciones", "CIF Valencia · L/C irrevocable"], ["Contenedor", "FICU 482913-7 (40' RF)"], ["Pedido", "OC-MN-2026-044"]] },
+              { "kind": "table", "rows": [["Descripción", "Cantidad", "Precio unit.", "Importe"], ["Hijuelo de Agave tequilana var. azul, 30–35 cm", "9.000", "3,20 USD", "28.800,00 USD"], ["Hijuelo de Agave tequilana var. azul, 36–45 cm", "9.000", "3,60 USD", "32.400,00 USD"], ["Flete marítimo y seguro (incluidos)", "—", "—", "0,00 USD"], ["TOTAL", "18.000", "", "61.200,00 USD"]] },
+              { "kind": "p", "text": "Mercancía de origen mexicano. Se acompaña certificado fitosanitario de exportación y lista de empaque. Anticipo recibido: 18.360,00 USD. Saldo pendiente: 42.840,00 USD." },
+              { "kind": "stamp", "text": "Original · Exportación" },
+              { "kind": "sign", "text": "Departamento de Facturación (firma simulada)" }
+            ]
+          }
+        ]
+      },
+      "metadata": { "Origen": "Aportado por la parte demandante", "Moneda": "Dólares estadounidenses", "Huella SHA-256": "41b0…7d2c (simulada)" },
+      "observations": [{ "author": "Perito contable", "date": "14/06/2026", "text": "Los importes cuadran con el contrato y con la carta de crédito." }]
+    },
+    {
+      "id": "c01-orden",
+      "code": "AGV-014/C-01/003",
+      "title": "Orden de compra OC-MN-2026-044",
+      "date": "15/02/2026",
+      "type": "Orden de compra",
+      "status": "en-revision",
+      "source": {
+        "kind": "simulated",
+        "letterhead": "Distribuidora Ficticia Mar del Norte, S.L.",
+        "pages": [
+          {
+            "blocks": [
+              { "kind": "kv", "pairs": [["Orden n.º", "OC-MN-2026-044"], ["Proveedor", "Exportadora Ficticia del Altiplano"], ["Entrega", "Puerto de Valencia"], ["Fecha límite", "15/04/2026"]] },
+              { "kind": "p", "text": "Conforme al contrato de 12/02/2026, solicitamos el envío de 18.000 hijuelos de agave. Requisito imprescindible: el material vegetal deberá llegar con raíz limpia, sin restos de suelo y con certificado fitosanitario que acredite la ausencia de Scyphophorus acupunctatus (picudo del agave)." },
+              { "kind": "p", "text": "Cualquier lote que no cumpla estos requisitos será rechazado en destino y quedará a disposición del proveedor, por cuenta y riesgo de éste." },
+              { "kind": "sign", "text": "Dpto. de Compras · Mar del Norte (firma simulada)" }
+            ]
+          }
+        ]
+      },
+      "metadata": { "Origen": "Aportado por la parte demandada", "Huella SHA-256": "c7aa…0e19 (simulada)" },
+      "observations": [{ "author": "Ponente", "date": "11/06/2026", "text": "Contrastar si la exigencia de «raíz limpia» se incorporó al contrato o sólo figura en la orden." }]
+    },
+    {
+      "id": "c01-empaque",
+      "code": "AGV-014/C-01/004",
+      "title": "Lista de empaque",
+      "date": "08/03/2026",
+      "type": "Lista de empaque",
+      "status": "observado",
+      "source": {
+        "kind": "simulated",
+        "letterhead": "Exportadora Ficticia del Altiplano, S.A. de C.V.",
+        "pages": [
+          {
+            "blocks": [
+              { "kind": "kv", "pairs": [["Contenedor", "FICU 482913-7"], ["Precinto", "MX-77120"], ["Bultos", "360 cajas ventiladas"], ["Peso bruto", "9.540 kg"]] },
+              { "kind": "table", "rows": [["Cajas", "Contenido", "Calibre", "Peso neto"], ["001–180", "50 hijuelos por caja", "30–35 cm", "4.320 kg"], ["181–360", "50 hijuelos por caja", "36–45 cm", "4.860 kg"], ["Total", "18.000 hijuelos", "", "9.180 kg"]] },
+              { "kind": "p", "text": "Embalaje: caja de cartón corrugado con perforaciones laterales, separadores de cartón y viruta de madera tratada (sello NIMF-15). Estiba en 20 palés." }
+            ]
+          }
+        ]
+      },
+      "metadata": { "Origen": "Aportado por la parte demandante", "Huella SHA-256": "02fe…b388 (simulada)" },
+      "observations": [{ "author": "Secretaría", "date": "05/06/2026", "text": "El número de palés (20) no coincide con el acta de inspección, que registra 18." }]
+    }
+  ]
+}
