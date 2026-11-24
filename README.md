@@ -28,6 +28,21 @@ gráfico (también se puede cambiar desde el selector «Gráficos»).
 | Cambiar de página | `←` / `→` o botones ‹ › |
 | Volver | `Esc` (documento → carpeta → conjunto) o los botones de regreso |
 
+## Publicación en Cloudflare Pages
+
+En dash.cloudflare.com → *Workers & Pages* → *Create* → *Pages* → *Connect to Git*,
+elegir este repositorio y configurar:
+
+| Campo | Valor |
+|---|---|
+| Framework preset | Vite (o None) |
+| Build command | `npm run build` |
+| Build output directory | `dist` |
+| Root directory | *(vacío)* |
+
+La versión de Node se toma de `.node-version` (22). `public/_headers` define la
+caché: recursos con hash inmutables y expediente con revalidación cada 5 min.
+
 ## Secuencias
 
 **Apertura** (`FolderOpeningAnimation.ts`, GSAP):
