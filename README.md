@@ -11,7 +11,6 @@ maquetado) con zoom, desplazamiento, paginación, metadatos y observaciones.
 ## Uso
 
 ```bash
-cd agave-case-system
 npm install
 npm run dev          # http://localhost:5173
 npm run build        # dist/ listo para publicar
